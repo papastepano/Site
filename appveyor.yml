@@ -46,6 +46,7 @@ for:
         - PRODUCT: tests
     install:
       - sh: nvm install 16.13
+      - sh: brew install --cask google-chrome
     before_build:
       - pwsh: dotnet restore
     build:
